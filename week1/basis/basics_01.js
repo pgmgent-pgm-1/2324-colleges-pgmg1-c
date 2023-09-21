@@ -87,3 +87,57 @@ console.log(`My name is ${fName} ${lName}. My age is ${myAge}.`);
 let width = 1920;
 height = 1080;
 console.log(`The resolution of my screen is ${width}x${height}`);
+
+// Wiskundige operatoren (En. arithmetic operators)
+// 1. Optellen (En. addition operators)
+let x = 6; // 6
+let y = -4; // -4
+let z = x; // 6
+z = x + y; // 2
+console.log(x, y, z);
+// 2. Aftrekken (En. Substraction operators)
+z = x - y; // 10
+console.log(z);
+// 3. Vermenigvuldigen (En. multiplication operators)
+z = 4 * 3; // 12
+z = x * y; // -24
+// 4. Deling (Eng. division operators)
+z = 4 / 3; // 1.333333
+z = x / y; // -1,5
+z = -4 / 0;
+console.log(z);
+// 5. Macht verheffen (En. exponential)
+z = 4 ** 3; // 64
+console.log(z);
+// 6. Rest van een deling (En. division remainder)
+z = 4 % 2; // 0
+z = 4 % 3; // 1
+z = x % y; // 2
+console.log(z);
+// one operand and one operator
+z = z + 1; // 3
+z += 1; // 4
+z = z - 1; // 3
+z -= 1; // 2
+z *= 2; // 4 => z = z * 2
+z /= 2; // 2 => z = z / 2;
+
+z = 'Philippe';
+z += ' De Pauw';
+console.log(z);
+z = 4;
+z += 'sla';
+console.log(z);
+z = 4;
+z *= 'sla';
+console.log(z);
+
+// Math class => many mathematical operations
+pi = Math.PI;
+console.log(pi);
+z = 12.6;
+let v = Math.ceil(z); // 13
+v = Math.floor(z); // 12
+v = Math.round(z); // 13
+v = Math.floor(Math.random() * 30);
+console.log(v);
