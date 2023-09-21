@@ -52,3 +52,38 @@ console.log(contact);
 let salary = 4100;
 salary = salary + 1000;
 console.log(salary);
+
+let height = 1.72;
+console.log('The height of ' + nickName + ' is ' + height + '.')
+
+// Multiple lines of text via backslash escaping
+let poem = 
+'Roses are red,\n\
+vilotes are blue,\n\
+sugar is sweet,\n\
+so is foo';
+console.log(poem);
+
+// Template literal notation of a string
+poem = 
+`Roses are red,
+vilotes are blue,
+sugar is sweet,
+so is foo`;
+console.log(poem);
+
+// Boolean
+let isGamePlaying = false;
+console.log('The state of the game is ' + isGamePlaying);
+isGamePlaying = true;
+console.log('The state of the game is ' + isGamePlaying);
+
+const fName = 'Slim';
+const lName = 'Shady';
+let myAge = 37;
+console.log('My name is ' + fName + ' ' + lName + '. My age is ' + myAge + '.');
+console.log(`My name is ${fName} ${lName}. My age is ${myAge}.`);
+
+let width = 1920;
+height = 1080;
+console.log(`The resolution of my screen is ${width}x${height}`);
