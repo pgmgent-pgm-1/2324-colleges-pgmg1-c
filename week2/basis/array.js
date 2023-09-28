@@ -35,3 +35,34 @@ console.log(fruit);
 // Add an element with a instruction = function => push
 fruit.push('Abrikoos');
 console.log(fruit);
+
+// Cats
+const cats = [
+  'Frodo',
+  'Crokette',
+  'Korneel',
+];
+let myCat = cats[2];
+console.log(myCat);
+cats[cats.length] = 'Katinka';
+console.log(cats);
+cats.length = cats.length - 1;
+console.log(cats);
+cats[99] = 'Pommelien';
+console.log(cats);
+cats[66] = 'Devil';
+myCat = cats[66];
+console.log(`My favo cat is ${myCat}`);
+
+for (let i = 0; i < cats.length; i++) {
+  if (cats[i] !== undefined) {
+    console.log(`The cat on index ${i} is ${cats[i]}.`);
+  }
+}
+
+// Random generation of a number ex. 1982736474849282982
+let randomNumber = '', nChars = 1000;
+for (let j = 0; j < nChars; j++) {
+  randomNumber += Math.floor(Math.random() * 10);
+}
+console.log(`The generated random number is ${randomNumber}`);
