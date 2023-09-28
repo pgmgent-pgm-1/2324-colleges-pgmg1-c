@@ -36,3 +36,19 @@ addition(2, -4);
 addition(-8, 6);
 addition(3, '4');
 addition('5', 4);
+
+// Definieert een function met de naam generateMatrix waar we het aantal rijen en kolommen kunnen meegeven en print in de output console
+function generateMatrix(nCols, nRows) {
+  let m = '';
+  for (let r = 0; r < nRows; r++) {
+    for (let c = 0; c < nCols; c++) {
+      m += '*';
+    }
+    m += (r < nRows - 1) ? '\n' : '';
+  }
+  console.log(m);
+}
+// Spreek de function generateMatrix aan
+generateMatrix(4, 3);
+generateMatrix(8, 10);
+generateMatrix(16, 16);
