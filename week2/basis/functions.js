@@ -38,17 +38,46 @@ addition(3, '4');
 addition('5', 4);
 
 // Definieert een function met de naam generateMatrix waar we het aantal rijen en kolommen kunnen meegeven en print in de output console
-function generateMatrix(nCols, nRows) {
+function generateMatrix(nCols, nRows, ch) {
   let m = '';
   for (let r = 0; r < nRows; r++) {
     for (let c = 0; c < nCols; c++) {
-      m += '*';
+      m += ch;
     }
     m += (r < nRows - 1) ? '\n' : '';
   }
   console.log(m);
 }
 // Spreek de function generateMatrix aan
-generateMatrix(4, 3);
-generateMatrix(8, 10);
-generateMatrix(16, 16);
+generateMatrix(4, 3, '*');
+generateMatrix(8, 10, 'P');
+generateMatrix(16, 16, '💓');
+generateMatrix(32, 32, '🥋');
+
+// Definieert een functie met de naam multiply met als doel twee getallen met elkaar te vermenigvuldigen en print naar de output console
+function multiply (a, b) {
+  const result = a * b;
+  console.log(`The multiplication of ${a} and ${b} is ${result}.`)
+}
+// Spreek de function multiply aan
+multiply(3, -4);
+multiply(-3, -6);
+multiply(-3, 9);
+
+// Functies die iets teruggeven (En. return) aan de aanvrager
+function getBioOfPerson (fullName, age, gender, salary) {
+  let content = '';
+  content = `
+  Name: ${fullName}
+  ====================================
+  Age: ${age}
+  Gender: ${gender}
+  Salary: ${salary}
+
+  `;
+  return content;
+}
+let bio = getBioOfPerson('Philippe Collins', 32, 'Male', 5800);
+console.log(bio);
+bio = getBioOfPerson('Benoit De Wilde', 64, 'In de war', 10598);
+console.log(bio);
