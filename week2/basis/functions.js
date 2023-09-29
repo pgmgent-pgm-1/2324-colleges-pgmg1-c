@@ -81,3 +81,26 @@ let bio = getBioOfPerson('Philippe Collins', 32, 'Male', 5800);
 console.log(bio);
 bio = getBioOfPerson('Benoit De Wilde', 64, 'In de war', 10598);
 console.log(bio);
+
+// Een verzameling van technologies
+const technologies = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'Flutter',
+  'PHP',
+  'Python',
+  'React',
+  'Laravel',
+];
+function renderStringForTechnologies (arrTechnologies) {
+  let content = '';
+  for (let t = 0; t < arrTechnologies.length; t++) {
+    content += `Technology ${t}: ${arrTechnologies[t]}`;
+    content += (t < arrTechnologies.length - 1) ? '\n': ''; 
+  }
+  return content;
+}
+let output = renderStringForTechnologies(technologies);
+console.log(output);
