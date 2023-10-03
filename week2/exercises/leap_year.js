@@ -14,3 +14,7 @@ if (year % 4 === 0) {
   isLeapYear = false;
 }
 console.log(`The year ${year} is ${isLeapYear}`);
+
+// Je kan deze code ook een stuk korter schrijven
+isLeapYear = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) ? true : false;
+console.log(`The year ${year} is ${isLeapYear}`);
