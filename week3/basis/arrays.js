@@ -61,7 +61,20 @@ console.log(breadcrumb);
 const reversedSitemap = sitemap.reverse();
 const title = reversedSitemap.join(' | ');
 console.log(title);
-
+// Generate a breadcrumb in HTML
+let htmlStr = '';
+// htmlStr += `
+// <ul>
+//   <li>Sla1</li>
+//   <li>&gt;</li>
+// </ul>
+// `;
+htmlStr = '<ul>';
+for (let i = 0; i < sitemap.length; i++) {
+  htmlStr += `<li>${sitemap[i]}</li>`;
+}
+htmlStr += '</ul>';
+console.log(htmlStr);
 
 
 
