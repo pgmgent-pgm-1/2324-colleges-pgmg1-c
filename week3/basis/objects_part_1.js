@@ -59,3 +59,23 @@ let str = '           Paul        ';
 str = str.trim();
 str = str.charAt(2);
 console.log(str);
+
+// Describe a lineup
+const lineup = [
+  {
+    artist: {
+      name: 'Fred Again',
+      socials: {
+        instagram: 'https://www.instagram.com/fredagainagainagainagainagain/'
+      }
+    }
+  },
+  {
+    artist: {
+      name: 'Pommelien',
+      socials: {
+        instagram: 'https://www.instagram.com/pommelien'
+      }
+    }
+  },
+]
