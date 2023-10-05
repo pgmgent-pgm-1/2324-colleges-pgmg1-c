@@ -37,3 +37,25 @@ console.log(output);
 for (let prop in person) {
   console.log(`The prop ${prop} with value ${person[prop]}`);
 }
+
+// Repeat the same stuff
+output = 'Properties of the object person\n---------------------------------------------';
+for (let prop in person) {
+  output += `\nThe prop ${prop} with value ${person[prop]}`;
+}
+console.log(output);
+
+// Math object
+let v = Math.PI;
+v = Math.sin(30);
+console.log(v);
+
+// Number object
+v = Number.MIN_VALUE;
+console.log(v);
+
+// String object
+let str = '           Paul        ';
+str = str.trim();
+str = str.charAt(2);
+console.log(str);
