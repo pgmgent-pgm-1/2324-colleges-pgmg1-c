@@ -66,7 +66,7 @@ const lineup = [
     artist: {
       name: 'Fred Again',
       socials: {
-        instagram: 'https://www.instagram.com/fredagainagainagainagainagain/'
+        instagram: 'https://www.instagram.com/fredagainagainagainagainagain/',
       }
     }
   },
@@ -74,8 +74,12 @@ const lineup = [
     artist: {
       name: 'Pommelien',
       socials: {
-        instagram: 'https://www.instagram.com/pommelien'
+        instagram: 'https://www.instagram.com/pommelien',
       }
     }
   },
-]
+];
+output = lineup[1].artist.name;
+console.log(output);
+output = lineup[0].artist.socials.instagram;
+console.log(output);
