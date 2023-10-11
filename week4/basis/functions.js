@@ -77,10 +77,14 @@ function generateStringForCars (cars) {
   return output;
 }
 
+const genStringForCars = (cars) => {
+  return cars.map((car, index) => `Car ${ index + 1 }: ${ car.brand }, ${ car.gears} gears, ${ car.wheels} wheels\n`).join('...................................................................\n');
+}
+
 output = `
 ===================================================================
 | CARS                                                            |
 ===================================================================
-${generateStringForCars(cars)}
+${genStringForCars(cars)}
 `;
 console.log(output);
