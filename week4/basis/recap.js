@@ -72,3 +72,10 @@ let randomCharacter = quote.charAt(randomCharacterIndex);
 console.log(randomCharacter);
 let charCode = quote.charCodeAt(randomCharacterIndex);
 console.log(charCode);
+
+// Generate character based on code
+output = '';
+for (let k = 0; k < 400000; k++) {
+  output += ` ${String.fromCharCode(k)}`;
+}
+console.log(output);
