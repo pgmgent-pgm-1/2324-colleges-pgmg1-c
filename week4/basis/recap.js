@@ -67,7 +67,8 @@ console.log(output);
 
 // Get Character code for certain Character
 let quote = 'I Like Graphics Love Code';
-let randomCharacter = quote.charAt(Math.floor(Math.random() * quote.length));
+const randomCharacterIndex = Math.floor(Math.random() * quote.length);
+let randomCharacter = quote.charAt(randomCharacterIndex);
 console.log(randomCharacter);
-let charCode = quote.charCodeAt(Math.floor(Math.random() * quote.length));
+let charCode = quote.charCodeAt(randomCharacterIndex);
 console.log(charCode);
