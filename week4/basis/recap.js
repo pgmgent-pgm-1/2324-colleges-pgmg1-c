@@ -65,3 +65,9 @@ for (let day of daysOfWeek) {
 }
 console.log(output);
 
+// Get Character code for certain Character
+let quote = 'I Like Graphics Love Code';
+let randomCharacter = quote.charAt(Math.floor(Math.random() * quote.length));
+console.log(randomCharacter);
+let charCode = quote.charCodeAt(Math.floor(Math.random() * quote.length));
+console.log(charCode);
