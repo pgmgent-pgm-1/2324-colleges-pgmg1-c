@@ -41,3 +41,27 @@ for (let course of lecturer.courses) {
   index++;
 }
 console.log(output);
+
+// Days of the week
+const daysOfWeek = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+];
+
+// Pick random day
+const randomDayIndex = Math.floor(Math.random() * daysOfWeek.length);
+const randomDay = daysOfWeek[randomDayIndex];
+console.log(randomDay);
+
+// Loop with for ... of
+output = '';
+for (let day of daysOfWeek) {
+  output += `\nThe day ${day}`;
+}
+console.log(output);
+
