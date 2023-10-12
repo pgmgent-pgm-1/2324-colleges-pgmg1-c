@@ -88,3 +88,5 @@ output = `
 ${genStringForCars(cars)}
 `;
 console.log(output);
+
+// Scope of a function
