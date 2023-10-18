@@ -1,0 +1,29 @@
+.bit {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: hsl(128, 50%, 50%);
+
+  text-indent: -999em;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 3px;
+  height: 3px;
+
+  background-color: #000;
+  margin: 1px;
+
+  transition: all 268ms ease-in;
+}
+
+.row:hover {
+  transform: scale(100) rotate(360deg);
+}
