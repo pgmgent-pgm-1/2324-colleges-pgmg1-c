@@ -1,0 +1,9 @@
+.emojis-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.emoji {
+  border: 6px solid #000;
+}
