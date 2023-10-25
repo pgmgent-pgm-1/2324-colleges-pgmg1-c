@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.is--open {
+  top: 0;
+  left: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  height: 312px;
+}
+
+.gallery__image {
+  height: 312px;
+  list-style: none;
+}
+
+.gallery__image img {
+  height: 100%;
+}

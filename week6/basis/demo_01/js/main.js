@@ -2,9 +2,17 @@
 const $socialsElement = document.querySelector('.socials');
 const $galleryElement = document.querySelector('.gallery');
 const $overlayElement = document.querySelector('.overlay');
-setInterval(() => {
+const $lineupElement = document.querySelector('.lineup');
+for (let i = 0; i < 20; i++) {
+  const $elem = document.createElement('article');
+  $elem.innerHTML = `<h1>Heading ${i}</h1>`;
+  $elem.classList.add('concert');
+  $elem.style.backgroundColor = `rgba(255, 255, 0,1)`;
+  $lineupElement.appendChild($elem);
+}
+/* setInterval(() => {
   $overlayElement.classList.toggle('is--open');
-}, 1000);
+}, 1000);*/
 
 
 // Define the function generateHTMLForGallery
